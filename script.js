@@ -10,31 +10,16 @@ var result = 0;
 alert("result:" + result);
 
 // do..while loop//
-do {
-var correct = "no";
-correct = prompt ("Do you want to play?", "");
-// if (correct !="no" && correct !="yes") {
-  do {
-  alert("Invalid choice. Please say, yes or no");
-  correct = prompt("Please say, yes or no!");
-} while (correct !="no" && correct !="yes") {
-  // correct = prompt("Please say, yes or no!");
-}
-
-while (correct != "no") {
-  correct = prompt ("Enter a Word!");
-if (correct != "no") {
-  correct = prompt ("Do you want to play again?");
-  do {
-  alert("Invalid choice. Please say, yes or no");
-  correct = prompt("Please say, yes or no!");
-} while (correct !="no" && correct !="yes") {
-}
-}
-}
-} while (correct =! "no") {
-  if (correct == "no") {
-    document.write(correct+"<br/>");
+var userinput;
+do{
+  userinput = prompt("do you want to play");
+  if (userinput =="yes"){
+    prompt("say something")
+  } else if (userinput !="no"){
+    alert("please say yes or no");
+  } else {
+    break;
   }
-
-}
+  document.write("your word is"+userinput+"<br/>");
+  userinput++;
+} while(userinput !="no");
