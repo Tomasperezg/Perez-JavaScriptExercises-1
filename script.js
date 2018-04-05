@@ -8,18 +8,21 @@ var result = 0;
 		  result += i;
     }
 alert("result:" + result);
+console.log(result);3
 
 // do..while loop//
 var userinput;
+var user;
 do{
   userinput = prompt("do you want to play");
   if (userinput =="yes"){
-    prompt("say something")
-  } else if (userinput !="no"){
+    var user = prompt("say something")
+  } else if (userinput !="yes" && userinput !="no"){
     alert("please say yes or no");
-  } else {
+  } else  {
     break;
   }
-  document.write("your word is"+userinput+"<br/>");
-  userinput++;
+  console.log(user);
 } while(userinput !="no");
+
+// while loop
