@@ -26,6 +26,7 @@ do{
 } while(userinput !="no");
 
 // while loop
+//didn't work
 
 var username = prompt("would you like to print your name?");
 while (username == "yes"){
@@ -49,4 +50,4 @@ var time = prompt("What time of the day is it?")
     console.log("since is noon, you should eat lunch, we suggest a salad")
   } else if (time == "evening"){
     console.log("since is evening, you should eath dinner, we suggest chicken and rice")
-  } 
+  }
